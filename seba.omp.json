@@ -34,7 +34,7 @@
           "style": "plain",
           "background": "transparent",
           "foreground": "p:terminal-blue",
-          "template": "\u279c "
+          "template": "\uf07b "
         },
         {
           "type": "path",
