@@ -24,11 +24,17 @@
       "alignment": "left",
       "segments": [
         {
+          "foreground": "p:os",
+          "style": "plain",
+          "template": "{{.Icon}} ",
+          "type": "os"
+        },
+        {
           "type": "text",
           "style": "plain",
           "background": "transparent",
           "foreground": "p:terminal-blue",
-          "template": "\u279c "
+          "template": "\uf07b "
         },
         {
           "type": "path",
