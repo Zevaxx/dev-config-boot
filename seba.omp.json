@@ -24,10 +24,18 @@
       "alignment": "left",
       "segments": [
         {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "foreground": "p:os",
+          "type": "os",
+          "style": "plain"
+        },
+        {
           "style": "plain",
-          "template": "{{.Icon}} ",
-          "type": "os"
+          "template": "\uf489 {{ .Name }}",
+          "type": "shell"
         },
         {
           "type": "text",
@@ -44,7 +52,8 @@
             "style": "folder"
           },
           "template": "<b>{{ .Path }}</b> <p:light-sky-blue>\u26a1</>"
-        },{
+        },
+        {
           "foreground": "p:light-sky-blue",
           "properties": {
             "fetch_stash_count": true,
@@ -115,12 +124,10 @@
           "style": "plain",
           "foreground": "p:light-sky-blue",
           "template": "\uFCD1 {{ .Full}}"
-        },    
+        },
         {
           "foreground": "#b8ff75",
-          "foreground_templates": [
-            "{{ if gt .Code 0 }}#E06C75{{ end }}"
-          ],
+          "foreground_templates": ["{{ if gt .Code 0 }}#E06C75{{ end }}"],
           "properties": {
             "style": "roundrock",
             "always_enabled": true

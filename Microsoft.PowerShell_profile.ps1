@@ -106,8 +106,6 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 
-New-Alias Codi "code-insiders"
-
 # location of git repositories (set this to where you put yours)
 $repo_base = "${HOME}/Documents/code/git"
 $repo_px = "${repo_base}/PX"
